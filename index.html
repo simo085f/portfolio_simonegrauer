@@ -5,9 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">  
+    <!--Burgermenu ikon hentes ind med det nedstående link rel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon1.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>Portfolio Simone Grauer</title>
   </head>
   <body>
+      <section id="body"></section>
+    <header>
+       
+      <div id="sideMenu" class="sideNav">
+            <a href="javascript:void(0)" class="closebtn" style="font-size: 30px; float: right; width: 20px; border: none; margin-right: 3vw;margin-top: -8px;" onclick="closeMenu()">&times;</a>
+            <div class="punkter">
+                    <section id="logo">
+                            <img src="logo-1-12.png" alt="logo">
+                        </section>
+                    <a href="#forside">Forside</a>
+                    <a href="#skills">Kompetencer</a>
+                    <a href="#opgaver">Projekter</a>
+                    <a href="#om">Om</a>
+                </div>
+            </div>
+
+            
+            <!--Topnavigation/menu til ipad samt desktop-->
+            <section class="nav">
+                
+                <!-- Menupunkter til topnavigation/menu-->
+               
+                <section id="logo">
+                        <img src="logo-1-12.png" alt="logo">
+                    </section>
+                    <div class="menupunkter">
+                <a href="#body">Forside</a>
+                <a href="#skills">Kompetencer</a>
+                <a href="#opgaver">Projekter</a>
+                <a href="#om">Om</a>
+            </div>
+            </section>
+    
+      <!--Burgermenu som er blevet hentet ind som et ikon - https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-navicon-->
+      <span onclick="openNav()"
+        ><i class="fa fa-navicon" style="font-size:25px;"></i
+      ></span>
+    </header>
+    <picture>
+            <source media="(min-width: 1920px)" srcset="desktop.jpg">
+            <source media="(min-width: 1536px)" srcset="blomst1536_1.jpg">
+    
+            <source media="(min-width: 1024px)" srcset="blomsti1024.jpg">
+    
+            <source media="(min-width: 768px)" srcset="blomst768.jpg">
+    
+            <source media="(min-width: 627px)" srcset="blomst627.jpg">
+    
+            <source media="(min-width: 375px)" srcset="blomsti375.png">
+    
+            <img src="blomsti375.png" alt="mobileportrait">
+    
+    
+        </picture>
+<section id="forside"></section>
+    <section id="text_wrapper">
+    <div class="text">
+        <h1>Velkommen til mit portfolio</h1>
+        <div class="linje"></div>
+      <p>
+        Hej mit navn er Simone. Jeg er en multimediedesigner studerende, som har en interesse inden for frontend design.
+      </p>
+    </div>
+</section>
+
+    <main>
+        <section id=""></section>
+        <section id="skills">
+            <h1>Mine kompetancer</h1>
+            <p>Jeg er fuld gang med lære mere og udvide mine kompetancer.</p>
+            <div class="skills_container">
+            <div class="box">
+                <p>HTML5</p>
+            </div>
+            <div class="box">
+                <p>CSS3</p>
+                </div>
+            <div class="box">
+                <p>JS</p>
+            </div>
+            <div class="box">
+                <p>SASS</p>
+            </div>
+            <div class="box">
+                    <p>GIT</p>
+                </div>
+                <div class="box">
+                        <p>WORDPRESS</p>
+                    </div>
+            <div class="box">
+                <p>PHOTOSHOP</p>
+            </div>
+            <div class="box">
+                <p>ILLUSTRATER</p>
+            </div>
+        </div>
+            
+
+        
+        <section id="opgaver">
+            <h1>Tidligere projekter</h1>
+            <p>Nedenfor kan du se nogle af mine tidligere projekter.</p>
+
+            <div class="opgave_wrapper">
+                <div class="privatsnak">
+                  
+                   <a href="http://www.rebeccamortensen.dk/kea/02-animation/03-/endelig-animation/index.html"> <img src="privat-06.png" alt="privatsnak" class="lighten"></a>
+                </div>
+
+                <div class="huset">
+                  <a href="http://simonegrauer.dk/kea/huset-kbh/">  <img src="huset-06.png" alt="huset-kbh"></a>
+                </div>
+
+                <div class="marylou">
+                    <a href="http://simonegrauer.dk/kea/2sem-eksamen/eksamenfinal/index.php"><img src="marylou-06.png" alt="marylou" ></a>
+                </div>
+            </div>
+        </section>
+        <section id="om">
+          <div class="omtext">
+<h1>Lidt info om mig!</h1>
+          <p>Jeg hedder Simone Grauer, jeg er 22 år og
+              læser til multimediedesigner på Københavns erhvervsakademi.  Jeg er i gang med mit tredje semester. Når jeg er færdiguddannet som multimediedesigner, vil jeg gerne læse videre til web developer.</p>
+              <p>Jeg er en glad og udadvendt pige, som er nysgerrig på at lære mere om frontend design. Da mit mål på længere sigt er, at komme til at arbejde med opbygning og opdateringer af hjemmesider.</p>
+              <p>Jeg kan kontaktes på e-mail: simo085f@stud.kea.dk, eller på <a href="https://www.linkedin.com/in/simone-grauer-401824182/">linkedin</a></p>
+            </div>
+              <img src="simone.jpg" alt="mig">
+              <div class="borderimg"></div>
+
+               
+             
+        </section>
+        <div onclick="topFunction()"> <i style='font-size:24px' class='fas'>&#xf062;</i></div>
+    </main>
+
+    
     <script src="js.js"></script>
   </body>
 </html>
